@@ -9,7 +9,7 @@ import { colors } from '../styles/theme';
 export default function LandingPage() {
   return (
     <View style={styles.container}>
-      <PixelatedText style={styles.title} large bold>
+      <PixelatedText style={styles.title} large bold pink>
         S Y G L
       </PixelatedText>
       <View style={styles.spacer} />
@@ -27,14 +27,15 @@ export default function LandingPage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: colors.background, // Your dark background color
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
   },
   title: {
-    fontSize: 48,
-    color: colors.secondary,
+    fontSize: 75,
+    color: colors.primary, // The primary (pink) color from your theme
+    // fontFamily: 'PressStart2P', // Uncomment once set up
   },
   description: {
     fontSize: 16,
